@@ -1,5 +1,5 @@
 //
-//  PulseAppDelegate.h
+//  PulseRootViewController.h
 //  GigaOmNews
 //
 //  Created by Mustafa Furniturewala on 5/31/12.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PulseAppDelegate : UIResponder <UIApplicationDelegate>
+@interface PulseRootViewController : UITableViewController
 
-@property (strong, nonatomic) UIWindow *window;
-
-
+@property (nonatomic,strong) NSMutableArray* dataSource;
 
 @end
