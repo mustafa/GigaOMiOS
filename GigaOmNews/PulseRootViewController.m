@@ -31,13 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    // start getting the feed asynchronously
     // construct the request
     //  Next, we create an URL that points to the target endpoint
     NSURL *url = 
     [NSURL URLWithString:@"https://ajax.googleapis.com/ajax/services/feed/load?q=http://feeds.feedburner.com/ommalik&v=1.0"];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-    
     _dataSource = [[NSMutableArray alloc] init];
     MBJSONRequest *jsonRequest = [[MBJSONRequest alloc] init];
     [jsonRequest performJSONRequest:urlRequest completionHandler:^(id responseJSON, NSError *error) {
@@ -54,40 +53,33 @@
             NSArray *entries = [[[responseJSON objectForKey:@"responseData"] 
                                 objectForKey:@"feed"] 
                                objectForKey:@"entries"];
-            NSLog(@"%@",entries);
             for (NSDictionary *entry in entries)
             {
                 NSString *title = [entry objectForKey:@"title"];
                 NSString *author = [entry objectForKey:@"author"]; 
                 NSString *link = [entry objectForKey:@"link"]; 
+                
+                // get the image url for the thumbnail
                 NSArray *mediaGroups = [entry objectForKey:@"mediaGroups"];
                 NSDictionary *dict = [mediaGroups objectAtIndex:0];
                 NSArray *imageUrls = [dict objectForKey:@"contents"];
                 NSDictionary *imageThumbnail = [imageUrls objectAtIndex:0];
                 
                 NSLog(@"'%@' by %@", title, author);
-                NSLog(@"Dictionary : %@",[imageThumbnail objectForKey:@"url"]);
+               // NSLog(@"Dictionary : %@",[imageThumbnail objectForKey:@"url"]);
                 PulseHeadLine *headline = [[PulseHeadLine alloc] initWithTitle:title 
                                                                    imageForURL:[imageThumbnail objectForKey:@"url"] 
                                                                     contentURL:link];
                 [[self dataSource] addObject:headline];
             }
         }
-        NSLog(@"data source : %@",[self dataSource]);
         [[self tableView] reloadData];
     }];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -119,12 +111,13 @@
     [[cell textLabel] setText:headline.title];
     NSURL *url = [NSURL URLWithString: 
                   headline.imageURL];
-
-
     NSURLRequest* imageURLRequest = [[NSURLRequest alloc] initWithURL:url];
     MBImageRequest* imageRequest = [[MBImageRequest alloc] init];
+    
     // get the images asynchronously
-    [imageRequest performImageRequest:imageURLRequest completionHandler:^(UIImage *image, NSError *error) {
+    
+    [imageRequest performImageRequest:imageURLRequest 
+                    completionHandler:^(UIImage *image, NSError *error) {
         [[cell imageView] setImage:image];
     }];
     
@@ -146,6 +139,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    // move to the web view and pass feed data
     if([[segue identifier] isEqualToString:@"TitleToWebView"])
     {
         
