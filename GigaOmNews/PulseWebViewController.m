@@ -16,6 +16,7 @@
 @implementation PulseWebViewController
 @synthesize webView = _webView;
 @synthesize headline = _headline;
+@synthesize activity = _activity;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +32,7 @@
     [super viewDidLoad];
     NSURL* url = [[NSURL alloc] initWithString:self.headline.contentUrl];
     NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:url];
+    [[self webView] setDelegate:self];
     [[self webView] loadRequest:urlRequest];
 	// Do any additional setup after loading the view.
 }
@@ -38,6 +40,7 @@
 - (void)viewDidUnload
 {
     [self setWebView:nil];
+    [self setActivity:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -45,6 +48,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [[self activity] stopAnimating];
 }
 
 @end

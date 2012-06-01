@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 @class PulseHeadLine;
-@interface PulseWebViewController : UIViewController
+@interface PulseWebViewController : UIViewController <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong,nonatomic) PulseHeadLine* headline;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activity;
 @end

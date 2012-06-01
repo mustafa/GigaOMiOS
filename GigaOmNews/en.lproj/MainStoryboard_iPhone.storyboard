@@ -6,21 +6,21 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
     <scenes>
-        <!--Pulse Root View Controller-->
+        <!--Pulse Root View Controller - Loading...-->
         <scene sceneID="i46-Ln-7RT">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeE-hx-AzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="K7v-xi-fqe" customClass="PulseRootViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gDx-VJ-xwF">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="86" sectionHeaderHeight="22" sectionFooterHeight="22" id="gDx-VJ-xwF">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TitleCell" id="tHe-pT-JpS">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TitleCell" rowHeight="86" id="tHe-pT-JpS">
+                                <rect key="frame" x="0.0" y="22" width="320" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="85"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -34,7 +34,7 @@
                             <outlet property="delegate" destination="K7v-xi-fqe" id="5A1-eb-6sE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hCh-de-dii"/>
+                    <navigationItem key="navigationItem" title="Loading..." id="hCh-de-dii"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="702" y="111"/>
@@ -53,11 +53,17 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="gray" id="wui-h8-dvj">
+                                <rect key="frame" x="151" y="197" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="81y-NG-edD"/>
                     <connections>
+                        <outlet property="activity" destination="wui-h8-dvj" id="Zt2-zO-hGz"/>
                         <outlet property="webView" destination="jt0-Uo-mVf" id="ekc-6f-1Nj"/>
                     </connections>
                 </viewController>
