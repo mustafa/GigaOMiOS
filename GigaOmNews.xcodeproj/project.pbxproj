@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D80903515783FF400B976E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D80903415783FF400B976E7 /* UIKit.framework */; };
+		6D80903715783FF400B976E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D80903615783FF400B976E7 /* Foundation.framework */; };
+		6D80903915783FF400B976E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D80903815783FF400B976E7 /* CoreGraphics.framework */; };
+		6D80903F15783FF400B976E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D80903D15783FF400B976E7 /* InfoPlist.strings */; };
+		6D80904115783FF500B976E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D80904015783FF500B976E7 /* main.m */; };
+		6D80904515783FF500B976E7 /* PulseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D80904415783FF500B976E7 /* PulseAppDelegate.m */; };
+		6D80904815783FF500B976E7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D80904615783FF500B976E7 /* MainStoryboard_iPhone.storyboard */; };
+		6D80904B15783FF500B976E7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D80904915783FF500B976E7 /* MainStoryboard_iPad.storyboard */; };
+		6D80904E15783FF500B976E7 /* PulseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D80904D15783FF500B976E7 /* PulseViewController.m */; };
+		6D80905615783FF600B976E7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D80905515783FF600B976E7 /* SenTestingKit.framework */; };
+		6D80905715783FF600B976E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D80903415783FF400B976E7 /* UIKit.framework */; };
+		6D80905815783FF600B976E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D80903615783FF400B976E7 /* Foundation.framework */; };
+		6D80906015783FF600B976E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D80905E15783FF600B976E7 /* InfoPlist.strings */; };
+		6D80906315783FF600B976E7 /* GigaOmNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D80906215783FF600B976E7 /* GigaOmNewsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D80905915783FF600B976E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D80902715783FF300B976E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D80902F15783FF400B976E7;
+			remoteInfo = GigaOmNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D80903015783FF400B976E7 /* GigaOmNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GigaOmNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D80903415783FF400B976E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6D80903615783FF400B976E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6D80903815783FF400B976E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6D80903C15783FF400B976E7 /* GigaOmNews-Info.plist */ = {isa = PBXFileReference; path = "GigaOmNews-Info.plist"; sourceTree = "<group>"; };
+		6D80903E15783FF400B976E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6D80904015783FF500B976E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D80904215783FF500B976E7 /* GigaOmNews-Prefix.pch */ = {isa = PBXFileReference; path = "GigaOmNews-Prefix.pch"; sourceTree = "<group>"; };
+		6D80904315783FF500B976E7 /* PulseAppDelegate.h */ = {isa = PBXFileReference; path = PulseAppDelegate.h; sourceTree = "<group>"; };
+		6D80904415783FF500B976E7 /* PulseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulseAppDelegate.m; sourceTree = "<group>"; };
+		6D80904715783FF500B976E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		6D80904A15783FF500B976E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		6D80904C15783FF500B976E7 /* PulseViewController.h */ = {isa = PBXFileReference; path = PulseViewController.h; sourceTree = "<group>"; };
+		6D80904D15783FF500B976E7 /* PulseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulseViewController.m; sourceTree = "<group>"; };
+		6D80905415783FF600B976E7 /* GigaOmNewsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigaOmNewsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D80905515783FF600B976E7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6D80905D15783FF600B976E7 /* GigaOmNewsTests-Info.plist */ = {isa = PBXFileReference; path = "GigaOmNewsTests-Info.plist"; sourceTree = "<group>"; };
+		6D80905F15783FF600B976E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6D80906115783FF600B976E7 /* GigaOmNewsTests.h */ = {isa = PBXFileReference; path = GigaOmNewsTests.h; sourceTree = "<group>"; };
+		6D80906215783FF600B976E7 /* GigaOmNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GigaOmNewsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D80902D15783FF400B976E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D80903515783FF400B976E7 /* UIKit.framework in Frameworks */,
+				6D80903715783FF400B976E7 /* Foundation.framework in Frameworks */,
+				6D80903915783FF400B976E7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D80905015783FF600B976E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D80905615783FF600B976E7 /* SenTestingKit.framework in Frameworks */,
+				6D80905715783FF600B976E7 /* UIKit.framework in Frameworks */,
+				6D80905815783FF600B976E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D80902515783FF300B976E7 = {
+			isa = PBXGroup;
+			children = (
+				6D80903A15783FF400B976E7 /* GigaOmNews */,
+				6D80905B15783FF600B976E7 /* GigaOmNewsTests */,
+				6D80903315783FF400B976E7 /* Frameworks */,
+				6D80903115783FF400B976E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D80903115783FF400B976E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D80903015783FF400B976E7 /* GigaOmNews.app */,
+				6D80905415783FF600B976E7 /* GigaOmNewsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D80903315783FF400B976E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D80903415783FF400B976E7 /* UIKit.framework */,
+				6D80903615783FF400B976E7 /* Foundation.framework */,
+				6D80903815783FF400B976E7 /* CoreGraphics.framework */,
+				6D80905515783FF600B976E7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D80903A15783FF400B976E7 /* GigaOmNews */ = {
+			isa = PBXGroup;
+			children = (
+				6D80904315783FF500B976E7 /* PulseAppDelegate.h */,
+				6D80904415783FF500B976E7 /* PulseAppDelegate.m */,
+				6D80904615783FF500B976E7 /* MainStoryboard_iPhone.storyboard */,
+				6D80904915783FF500B976E7 /* MainStoryboard_iPad.storyboard */,
+				6D80904C15783FF500B976E7 /* PulseViewController.h */,
+				6D80904D15783FF500B976E7 /* PulseViewController.m */,
+				6D80903B15783FF400B976E7 /* Supporting Files */,
+			);
+			path = GigaOmNews;
+			sourceTree = "<group>";
+		};
+		6D80903B15783FF400B976E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D80903C15783FF400B976E7 /* GigaOmNews-Info.plist */,
+				6D80903D15783FF400B976E7 /* InfoPlist.strings */,
+				6D80904015783FF500B976E7 /* main.m */,
+				6D80904215783FF500B976E7 /* GigaOmNews-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D80905B15783FF600B976E7 /* GigaOmNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D80906115783FF600B976E7 /* GigaOmNewsTests.h */,
+				6D80906215783FF600B976E7 /* GigaOmNewsTests.m */,
+				6D80905C15783FF600B976E7 /* Supporting Files */,
+			);
+			path = GigaOmNewsTests;
+			sourceTree = "<group>";
+		};
+		6D80905C15783FF600B976E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D80905D15783FF600B976E7 /* GigaOmNewsTests-Info.plist */,
+				6D80905E15783FF600B976E7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D80902F15783FF400B976E7 /* GigaOmNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D80906615783FF600B976E7 /* Build configuration list for PBXNativeTarget "GigaOmNews" */;
+			buildPhases = (
+				6D80902C15783FF400B976E7 /* Sources */,
+				6D80902D15783FF400B976E7 /* Frameworks */,
+				6D80902E15783FF400B976E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GigaOmNews;
+			productName = GigaOmNews;
+			productReference = 6D80903015783FF400B976E7 /* GigaOmNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D80905315783FF600B976E7 /* GigaOmNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D80906915783FF600B976E7 /* Build configuration list for PBXNativeTarget "GigaOmNewsTests" */;
+			buildPhases = (
+				6D80904F15783FF600B976E7 /* Sources */,
+				6D80905015783FF600B976E7 /* Frameworks */,
+				6D80905115783FF600B976E7 /* Resources */,
+				6D80905215783FF600B976E7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D80905A15783FF600B976E7 /* PBXTargetDependency */,
+			);
+			name = GigaOmNewsTests;
+			productName = GigaOmNewsTests;
+			productReference = 6D80905415783FF600B976E7 /* GigaOmNewsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D80902715783FF300B976E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Pulse;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 6D80902A15783FF300B976E7 /* Build configuration list for PBXProject "GigaOmNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6D80902515783FF300B976E7;
+			productRefGroup = 6D80903115783FF400B976E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D80902F15783FF400B976E7 /* GigaOmNews */,
+				6D80905315783FF600B976E7 /* GigaOmNewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D80902E15783FF400B976E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D80903F15783FF400B976E7 /* InfoPlist.strings in Resources */,
+				6D80904815783FF500B976E7 /* MainStoryboard_iPhone.storyboard in Resources */,
+				6D80904B15783FF500B976E7 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D80905115783FF600B976E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D80906015783FF600B976E7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D80905215783FF600B976E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D80902C15783FF400B976E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D80904115783FF500B976E7 /* main.m in Sources */,
+				6D80904515783FF500B976E7 /* PulseAppDelegate.m in Sources */,
+				6D80904E15783FF500B976E7 /* PulseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D80904F15783FF600B976E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D80906315783FF600B976E7 /* GigaOmNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D80905A15783FF600B976E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D80902F15783FF400B976E7 /* GigaOmNews */;
+			targetProxy = 6D80905915783FF600B976E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D80903D15783FF400B976E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D80903E15783FF400B976E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6D80904615783FF500B976E7 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D80904715783FF500B976E7 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6D80904915783FF500B976E7 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D80904A15783FF500B976E7 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		6D80905E15783FF600B976E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D80905F15783FF600B976E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D80906415783FF600B976E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D80906515783FF600B976E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D80906715783FF600B976E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GigaOmNews/GigaOmNews-Prefix.pch";
+				INFOPLIST_FILE = "GigaOmNews/GigaOmNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6D80906815783FF600B976E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GigaOmNews/GigaOmNews-Prefix.pch";
+				INFOPLIST_FILE = "GigaOmNews/GigaOmNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6D80906A15783FF600B976E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GigaOmNews.app/GigaOmNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GigaOmNews/GigaOmNews-Prefix.pch";
+				INFOPLIST_FILE = "GigaOmNewsTests/GigaOmNewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6D80906B15783FF600B976E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GigaOmNews.app/GigaOmNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GigaOmNews/GigaOmNews-Prefix.pch";
+				INFOPLIST_FILE = "GigaOmNewsTests/GigaOmNewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D80902A15783FF300B976E7 /* Build configuration list for PBXProject "GigaOmNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D80906415783FF600B976E7 /* Debug */,
+				6D80906515783FF600B976E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D80906615783FF600B976E7 /* Build configuration list for PBXNativeTarget "GigaOmNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D80906715783FF600B976E7 /* Debug */,
+				6D80906815783FF600B976E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6D80906915783FF600B976E7 /* Build configuration list for PBXNativeTarget "GigaOmNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D80906A15783FF600B976E7 /* Debug */,
+				6D80906B15783FF600B976E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D80902715783FF300B976E7 /* Project object */;
+}
